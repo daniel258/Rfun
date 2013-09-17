@@ -13,5 +13,5 @@ model3<-lm(y~x,subset=which(Gender==0))
 
 df<-data.frame(y,x,factor(Gender))
 ggplot(df,aes(y=y,x=x,color=factor(Gender)))+geom_point(size=3)+
-  geom_smooth(method=lm,  se=FALSE,size=1.2) 
+  geom_smooth(method=lm,  se=FALSE,size=1.2)+title("First try!!")
 summary(model)
